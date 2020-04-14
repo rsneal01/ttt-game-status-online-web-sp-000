@@ -63,6 +63,7 @@ end
 end
 
 def winner(board)
+  WIN_COMBINATIONS.each do |win_combination|
   if won?(board) && win_combination[0] == "X"
       return "X"
       elsif won?(board) && win_combination[0] == "O"
