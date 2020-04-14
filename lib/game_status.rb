@@ -63,9 +63,9 @@ end
 end
 
 def winner(board)
-  if won?(board) & win_combination[0] == "X"
+  if won?(board) && win_combination[0] == "X"
       return "X"
-      elsif win_combination[0] == "O"
+      elsif won?(board) && win_combination[0] == "O"
       return "O"
     else 
       return nil
