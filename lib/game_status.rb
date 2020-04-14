@@ -65,12 +65,10 @@ end
 def winner(board)
   if won?(board)  
       win_combination = won?(board)
-      elsif won?(board) && board[win_combination[0]] == "O"
-      return "O"
-    else 
-      return nil
+      board[win_combination[0]] 
+    
       
-    end
+
   end
 end
   
